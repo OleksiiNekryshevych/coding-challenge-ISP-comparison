@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core'
-import { RouterModule, Routes } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import { InternetPlanesListComponent } from './internet-planes-list/internet-planes-list.component'
+import { InternetPlanesListComponent } from './internet-planes-list/internet-planes-list.component';
 
 const routes: Routes = [
   {
@@ -9,7 +9,7 @@ const routes: Routes = [
     pathMatch: 'full',
     component: InternetPlanesListComponent,
   },
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
