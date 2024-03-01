@@ -1,0 +1,121 @@
+@import 'all';
+
+.internet-plan {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  min-height: 162px;
+  border: 2px solid $colorGray;
+  background-color: $colorWhite;
+  box-shadow: $verivoxBoxShadow;
+  transition: 0.5s;
+
+  &:hover {
+    border: 2px solid $colorGrayDark;
+    cursor: pointer;
+  }
+
+  &__card {
+    min-height: 162px;
+    padding: $spacing-32;
+    display: flex;
+    flex: 1;
+    gap: $spacing-8;
+
+    @include mq-tablet {
+      padding-left: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    min-width: 20%;
+    max-width: 30%;
+  }
+
+  &__index {
+    display: flex;
+    justify-content: center;
+    padding-top: $spacing-4;
+    width: $spacing-25;
+    background-color: $colorGray;
+    font-size: 14px;
+
+    @include mq-tablet {
+      background-color: transparent;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__speed {
+    margin-left: $spacing-16;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &-icon {
+      margin-right: $spacing-16;
+      font-size: $spacing-32;
+    }
+
+    &-title {
+      @include mq-tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__options {
+    margin-left: $spacing-16;
+
+    @include mq-phone {
+      display: none;
+    }
+  }
+
+  &__footer {
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mq-phone {
+      flex-direction: row;
+    }
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__button {
+    margin-top: auto;
+    background-color: $colorPrimary;
+    border-color: $colorPrimary;
+
+    @include mq-phone {
+      height: 100%;
+      margin-left: $spacing-8;
+    }
+
+    &-text {
+      @include mq-phone {
+        display: none;
+      }
+    }
+
+    &-icon {
+      display: none;
+
+      @include mq-phone {
+        display: initial;
+      }
+    }
+  }
+}

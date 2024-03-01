@@ -2,12 +2,15 @@ import { Directive, OnInit } from '@angular/core';
 
 import { DestroyableDirective } from '../../directives/destroyable.directive';
 
+import { PaginationParams } from '../../interfaces/pagination-params.interface';
+
 @Directive()
-export abstract class ListPageComponent<T>
+export abstract class ListPageComponent<T, K>
   extends DestroyableDirective
   implements OnInit
 {
   public currentPage: number = 1;
+  public paginationParams!: PaginationParams<K>;
   public listItems: T[] = [];
   public isLoading: boolean = false;
 

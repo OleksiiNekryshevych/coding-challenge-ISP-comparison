@@ -1,0 +1,9 @@
+.internet-plan-sorting {
+  margin-bottom: 4px;
+
+  &__form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+}

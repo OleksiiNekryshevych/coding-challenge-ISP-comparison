@@ -1,0 +1,59 @@
+<div class="internet-plan">
+  <div class="internet-plan__index">{{ index }}.</div>
+  <div class="internet-plan__card">
+    <header class="internet-plan__header">
+      <div class="internet-plan__title">{{ plan.title }}</div>
+    </header>
+    <div class="internet-plan__speed">
+      <div class="internet-plan__speed-item">
+        <span
+          class="internet-plan__speed-icon"
+          nz-icon
+          nzType="download"
+          nzTheme="outline"></span>
+        <span class="internet-plan__speed-title"> Download speed:&nbsp; </span>
+        <b>{{ plan.speed.downloadSpeed }} Mbit/s</b>
+      </div>
+      <div class="internet-plan__speed-item">
+        <span
+          class="internet-plan__speed-icon"
+          nz-icon
+          nzType="upload"
+          nzTheme="outline"></span>
+        <span class="internet-plan__speed-title"> Upload speed:&nbsp; </span>
+        <b>{{ plan.speed.uploadSpeed }} Mbit/s</b>
+      </div>
+    </div>
+    @if (plan.options?.length) {
+      <div class="internet-plan__options">
+        <div>Options:</div>
+        <ul class="internet-plan__options-list">
+          @for (option of plan.options; track option.id) {
+            <li>
+              <span>{{ option.title }}</span>
+            </li>
+          }
+        </ul>
+      </div>
+    }
+    <footer class="internet-plan__footer">
+      <div class="internet-plan__price">
+        {{ plan.price | price }}
+      </div>
+      <button
+        nz-button
+        nzSize="large"
+        nzType="primary"
+        class="internet-plan__button"
+        type="button"
+        (click)="redirectToPlan()">
+        <span
+          nz-icon
+          class="internet-plan__button-icon"
+          nzType="right"
+          nzTheme="outline"></span>
+        <span class="internet-plan__button-text">To tarif</span>
+      </button>
+    </footer>
+  </div>
+</div>

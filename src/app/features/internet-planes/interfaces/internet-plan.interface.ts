@@ -3,7 +3,12 @@ export interface InternetPlan {
   id: string;
   price: InternetPlanPrice;
   speed: InternetPlanSpeed;
-  options: unknown[];
+  options?: InternetPlanOption[];
+}
+
+interface InternetPlanOption {
+  id: string;
+  title: string;
 }
 
 export interface InternetPlanPrice {

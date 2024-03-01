@@ -1,0 +1,25 @@
+<div class="internet-plan-sorting">
+  <form [formGroup]="form" class="internet-plan-sorting__form">
+    <nz-select formControlName="InternetPlanesSortingType"
+      >)
+      <nz-option
+        [nzValue]="InternetPlanesSortingType.PRICE"
+        [nzLabel]="InternetPlanesSortingType.PRICE"></nz-option>
+      <nz-option
+        [nzValue]="InternetPlanesSortingType.UPLOAD_SPEED"
+        [nzLabel]="InternetPlanesSortingType.UPLOAD_SPEED"></nz-option>
+      <nz-option
+        [nzValue]="InternetPlanesSortingType.DOWNLOAD_SPEED"
+        [nzLabel]="InternetPlanesSortingType.DOWNLOAD_SPEED"></nz-option>
+    </nz-select>
+
+    <nz-select formControlName="SortingOrder">
+      <nz-option
+        [nzValue]="SortingOrder.ASCENDING"
+        [nzLabel]="SortingOrder.ASCENDING"></nz-option>
+      <nz-option
+        [nzValue]="SortingOrder.DESCENDING"
+        [nzLabel]="SortingOrder.DESCENDING"></nz-option>
+    </nz-select>
+  </form>
+</div>

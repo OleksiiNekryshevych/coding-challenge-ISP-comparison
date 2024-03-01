@@ -1,0 +1,113 @@
+import { InternetPlan } from '../interfaces/internet-plan.interface';
+
+export const internetPlanesMock: InternetPlan[] = [
+  {
+    id: '27688864-4795-48c4-a2ba-136c44bd1cc5',
+    title: 'Ultra 1',
+    price: { value: 103.3, currency: 'EUR' },
+    speed: { downloadSpeed: 146.37, uploadSpeed: 880.06 },
+    options: [
+      { id: '124819124as', title: 'option 1' },
+      { id: '12481asf9124as', title: 'option 2' },
+      { id: '124819afaa124as', title: 'option 1' },
+      { id: '12481asf9124as', title: 'option 4' },
+    ],
+  },
+  {
+    id: '5bca1e7b-8769-4fec-959b-c01e72133635',
+    title: 'Business 1',
+    price: { value: 168.84, currency: 'EUR' },
+    speed: { downloadSpeed: 494.61, uploadSpeed: 661.95 },
+    options: [
+      { id: '1248191af24as', title: 'option 2' },
+      { id: '1248af19124as', title: 'option 6' },
+      { id: '12481912asfas', title: 'option 3' },
+      { id: '1248asf19af124as', title: 'option 6' },
+    ],
+  },
+  {
+    id: '0ee08137-498a-4b38-b0cc-b363815c08fe',
+    title: 'Business 2',
+    price: { value: 161.03, currency: 'EUR' },
+    speed: { downloadSpeed: 706.23, uploadSpeed: 284.25 },
+    options: [{ id: '124819124as', title: 'option 3' }],
+  },
+  {
+    id: '9a556816-8618-470f-ba36-0a8b85846fb8',
+    title: 'Ultra 2',
+    price: { value: 10.18, currency: 'EUR' },
+    speed: { downloadSpeed: 242.25, uploadSpeed: 869.75 },
+    options: [{ id: '124819124as', title: 'option 5' }],
+  },
+  {
+    id: 'e2b48e5c-0099-4bab-aa81-0dc9f911b670',
+    title: 'Ultra 3',
+    price: { value: 147.44, currency: 'EUR' },
+    speed: { downloadSpeed: 134.37, uploadSpeed: 28.83 },
+    options: [{ id: '124819124as', title: 'option 4' }],
+  },
+  {
+    id: 'c79504ef-d05c-4b4e-bcf7-b8f773241fb1',
+    title: 'Ultra 4',
+    price: { value: 188.06, currency: 'EUR' },
+    speed: { downloadSpeed: 215.25, uploadSpeed: 243.21 },
+    options: [{ id: '124819124as', title: 'option 6' }],
+  },
+  {
+    id: 'f1cf2859-eb6a-49bb-b4d4-d1c76a48ed07',
+    title: 'Family 1',
+    price: { value: 76.16, currency: 'EUR' },
+    speed: { downloadSpeed: 15.61, uploadSpeed: 968.81 },
+    options: [{ id: '124819124as', title: 'option 8' }],
+  },
+  {
+    id: 'c31e3b0e-33b8-4c51-a8e2-f803ca8e775d',
+    title: 'Basic 1',
+    price: { value: 107.85, currency: 'EUR' },
+    speed: { downloadSpeed: 916.5, uploadSpeed: 782.8 },
+  },
+  {
+    id: '41d4c408-58e2-4967-b41e-0a521ecd244a',
+    title: 'Ultra 5',
+    price: { value: 74.51, currency: 'EUR' },
+    speed: { downloadSpeed: 674.9, uploadSpeed: 358.77 },
+  },
+  {
+    id: 'e212306c-0810-4967-9b9d-887798506d77',
+    title: 'Basic 2',
+    price: { value: 87.5, currency: 'EUR' },
+    speed: { downloadSpeed: 605.66, uploadSpeed: 356.85 },
+    options: [{ id: '124819124as', title: 'option' }],
+  },
+  {
+    id: '617ec975-e20c-4e24-9223-8e53bae8b1ea',
+    title: 'Family 2',
+    price: { value: 91.53, currency: 'EUR' },
+    speed: { downloadSpeed: 300.86, uploadSpeed: 7.02 },
+    options: [{ id: '124819124as', title: 'option' }],
+  },
+  {
+    id: 'b4fcde86-cce1-4801-a70a-0d3de4045a99',
+    title: 'Business 3',
+    price: { value: 59.45, currency: 'EUR' },
+    speed: { downloadSpeed: 723.39, uploadSpeed: 674.62 },
+  },
+  {
+    id: '1537c4ce-4282-411e-8ffd-b2c5d2cdadc3',
+    title: 'Ultra 6',
+    price: { value: 187.65, currency: 'EUR' },
+    speed: { downloadSpeed: 610.36, uploadSpeed: 702.69 },
+  },
+  {
+    id: '4cd5cecd-4ec9-4782-9f33-795d3c570644',
+    title: 'Family 3',
+    price: { value: 186.74, currency: 'EUR' },
+    speed: { downloadSpeed: 928.77, uploadSpeed: 750.15 },
+  },
+  {
+    id: '152aa19e-59de-4eae-8a86-ef012d7120e1',
+    title: 'Business 4',
+    price: { value: 142.95, currency: 'EUR' },
+    speed: { downloadSpeed: 114.66, uploadSpeed: 989.54 },
+  },
+];

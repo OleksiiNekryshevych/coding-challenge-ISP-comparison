@@ -1,0 +1,15 @@
+<div class="internet-planes-list">
+  <div class="internet-planes-list__header">
+    <app-internet-plan-sorting></app-internet-plan-sorting>
+  </div>
+
+  @if (isLoading) {
+    <div class="internet-planes-list__loading">
+      <nz-spin nzSimple [nzSize]="'large'"></nz-spin>
+    </div>
+  } @else {
+    @for (item of listItems; track item.id; let index = $index) {
+      <app-internet-plan [plan]="item" [index]="index + 1"></app-internet-plan>
+    }
+  }
+</div>

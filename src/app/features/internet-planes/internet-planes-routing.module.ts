@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { InternetPlanesListComponent } from './internet-planes-list/internet-planes-list.component';
+import { InternetPlanesListComponent } from './components/internet-planes-list/internet-planes-list.component';
 
 const routes: Routes = [
   {
